@@ -15,7 +15,8 @@ void snooping(char *path){
   if (info.st_size>1000000) printf("size: %ld MB \n", info.st_size/1000000);
   if (info.st_size>1000) printf("size: %ld KB \n", info.st_size/1000);
  else printf("size: %ld B", info.st_size);
-
+     
+    //copied from stack overflow
     printf("permissions:     ");
     printf( (S_ISDIR(info.st_mode)) ? "d" : "-");
     printf( (info.st_mode & S_IRUSR) ? "r" : "-");
