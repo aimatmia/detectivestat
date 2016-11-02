@@ -39,6 +39,7 @@ void snooping(char *path){
   printf("last time: %s\n", mtime);
 }
 
+
 int main(){ 
   snooping("snoop.c");
   return 0;
